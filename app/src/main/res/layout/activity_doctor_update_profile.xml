@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DoctorUpdateProfileActivity">
+
+    <ImageView
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:src="@drawable/flex1" />
+    <ImageView
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rotationY="180"
+        android:src="@drawable/flex1" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.appcompat.widget.LinearLayoutCompat
+
+            android:padding="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_marginBottom="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/btn_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_arrow_back_24"/>
+                <TextView
+                    android:layout_marginLeft="15dp"
+                    android:textSize="20sp"
+                    android:text="Update Doctor Account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <EditText
+                android:layout_marginTop="15dp"
+                android:id="@+id/txt_first_name"
+                android:hint="First Name"
+                android:drawableRight="@drawable/ic_outline_person_outline_24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:layout_marginTop="15dp"
+                android:id="@+id/txt_last_name"
+                android:hint="Last Name"
+                android:drawableRight="@drawable/ic_outline_person_outline_24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:inputType="text"
+                android:layout_marginTop="15dp"
+                android:id="@+id/txt_speciality"
+                android:hint="Speciality"
+                android:drawableRight="@drawable/ic_outline_person_outline_24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <EditText
+                android:inputType="phone"
+                android:layout_marginTop="15dp"
+                android:id="@+id/txt_phone"
+                android:hint="Phone Number"
+                android:drawableRight="@drawable/ic_baseline_phone_24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_location"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:paddingHorizontal="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:backgroundTint="@color/cyan_light"
+                android:background="@drawable/btn_solid_back"
+                android:fontFamily="@font/times_new_roman_bold"
+                android:drawableLeft="@drawable/ic_baseline_location_on_24"
+                android:text="Select Clinic Location" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/btn_solid_back"
+                android:fontFamily="@font/times_new_roman_bold"
+                android:text="Save" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_change_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/btn_solid_back"
+                android:fontFamily="@font/times_new_roman_bold"
+                android:text="Change Password" />
+
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

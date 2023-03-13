@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PatientHomeActivity">
+    <ImageView
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/flex1" />
+    <ImageView
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rotationY="180"
+        android:src="@drawable/flex1" />
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:padding="15dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/btn_profile"
+                    android:src="@drawable/ic_baseline_account_circle_24"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"/>
+                <TextView
+                    android:text="Profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="Admin Home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/btn_logout"
+                    android:src="@drawable/ic_baseline_exit_to_app_24"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"/>
+                <TextView
+                    android:text="Logout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginBottom="20dp"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:text="Main Menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginTop="20dp"
+                android:id="@+id/btn_pending_accounts"
+                android:background="@drawable/btn_outlined_back"
+                android:text="Pending Accounts"
+                android:paddingHorizontal="15dp"
+                android:drawableLeft="@drawable/ic_baseline_pending_actions_24"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/purple_700"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:paddingHorizontal="15dp"
+                android:drawableLeft="@drawable/ic_baseline_remove_circle_24"
+                android:layout_marginTop="20dp"
+                android:id="@+id/btn_rejected_accounts"
+                android:background="@drawable/btn_outlined_back"
+                android:text="Rejected Accounts"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/purple_700"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:paddingHorizontal="15dp"
+                android:drawableLeft="@drawable/ic_baseline_check_circle_24"
+                android:layout_marginTop="20dp"
+                android:id="@+id/btn_active_accounts"
+                android:background="@drawable/btn_outlined_back"
+                android:text="Active Accounts"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/purple_700"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginTop="20dp"
+                android:id="@+id/btn_find_patient"
+                android:background="@drawable/btn_outlined_back"
+                android:text="Find Patient File"
+                android:paddingHorizontal="15dp"
+                android:drawableLeft="@drawable/ic_baseline_search_24"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/purple_700"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginTop="20dp"
+                android:id="@+id/btn_patients_orders"
+                android:background="@drawable/btn_outlined_back"
+                android:paddingHorizontal="15dp"
+                android:drawableLeft="@drawable/ic_baseline_reorder_24"
+                android:text="Patients Orders"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/purple_700"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginTop="20dp"
+                android:id="@+id/btn_my_inbox"
+                android:paddingHorizontal="15dp"
+                android:drawableLeft="@drawable/ic_baseline_mail_24"
+                android:background="@drawable/btn_outlined_back"
+                android:text="Messages"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/purple_700"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</RelativeLayout>

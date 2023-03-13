@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PharmacistRegisterActivity">
+
+    <ImageView
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:src="@drawable/flex1" />
+    <ImageView
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rotationY="180"
+        android:src="@drawable/flex1" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.appcompat.widget.LinearLayoutCompat
+
+            android:padding="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_marginBottom="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/btn_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_arrow_back_24"/>
+                <TextView
+                    android:layout_marginLeft="15dp"
+                    android:textSize="20sp"
+                    android:text="Create Pharmacy Account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <EditText
+                android:layout_marginTop="15dp"
+                android:id="@+id/txt_pharmacy_name"
+                android:hint="Pharmacy Name"
+                android:drawableRight="@drawable/ic_baseline_hive_24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:layout_marginTop="15dp"
+                android:id="@+id/txt_first_name"
+                android:hint="First Name"
+                android:drawableRight="@drawable/ic_outline_person_outline_24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:layout_marginTop="15dp"
+                android:id="@+id/txt_last_name"
+                android:hint="Last Name"
+                android:drawableRight="@drawable/ic_outline_person_outline_24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:layout_marginTop="15dp"
+                android:id="@+id/txt_email"
+                android:hint="Email"
+                android:drawableRight="@drawable/ic_outline_email_24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!--        <EditText-->
+            <!--            android:layout_marginTop="15dp"-->
+            <!--            android:id="@+id/txt_password"-->
+            <!--            android:hint="Password"-->
+            <!--            android:drawableRight="@drawable/ic_outline_lock_24"-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content"/>-->
+
+            <com.google.android.material.textfield.TextInputLayout
+                app:boxBackgroundColor="@android:color/transparent"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="0dp"
+                app:passwordToggleEnabled="true"
+                android:layout_marginTop="15dp">
+
+                <EditText
+                    android:padding="0dp"
+                    android:background="@color/white"
+                    android:id="@+id/txt_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:inputType="textPassword"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                app:boxBackgroundColor="@android:color/transparent"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="0dp"
+                app:passwordToggleEnabled="true"
+                android:layout_marginTop="15dp">
+
+                <EditText
+                    android:background="@color/white"
+                    android:id="@+id/txt_confirm_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Confirm Password"
+                    android:inputType="textPassword"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <EditText
+                android:inputType="phone"
+                android:layout_marginTop="15dp"
+                android:id="@+id/txt_phone"
+                android:hint="Phone Number"
+                android:drawableRight="@drawable/ic_baseline_phone_24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_location"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:paddingHorizontal="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:backgroundTint="@color/cyan_light"
+                android:background="@drawable/btn_solid_back"
+                android:fontFamily="@font/times_new_roman_bold"
+                android:drawableLeft="@drawable/ic_baseline_location_on_24"
+                android:text="Select Pharmacy Location" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/btn_solid_back"
+                android:fontFamily="@font/times_new_roman_bold"
+                android:text="Register" />
+
+            <TextView
+                android:textSize="17sp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Already have an account?"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_login"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/btn_solid_back"
+                android:fontFamily="@font/times_new_roman_bold"
+                android:text="Login" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

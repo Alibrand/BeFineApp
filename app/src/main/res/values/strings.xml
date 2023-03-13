@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Be Fine</string>
+    <string name="title_activity_select_location">SelectLocationActivity</string>
+    <string name="API_KEY">AIzaSyCLbP4ucAhhALd1_iR62q0eRLGD1WoCBzk</string>
+    <string name="title_activity_maps">MapsActivity</string>
+</resources>

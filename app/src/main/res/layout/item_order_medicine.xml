@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingVertical="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/medicine_card"
+      android:backgroundTint="#F8F5DA"
+      app:cardCornerRadius="15dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+      <androidx.appcompat.widget.LinearLayoutCompat
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@drawable/btn_outlined_back"
+          android:orientation="vertical"
+          android:padding="15dp">
+
+          <androidx.appcompat.widget.LinearLayoutCompat
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical">
+
+              <ImageView
+                  android:layout_width="50dp"
+                  android:layout_height="50dp"
+                  android:layout_marginRight="5dp"
+                  android:src="@drawable/pills_blue_icon" />
+
+              <androidx.appcompat.widget.LinearLayoutCompat
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:orientation="vertical">
+
+                  <TextView
+                      android:id="@+id/txt_name"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:text="Medicine Name"
+                      android:textSize="17sp"
+                      android:textStyle="bold" />
+
+                  <TextView
+                      android:id="@+id/txt_form"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="form" />
+                  <!--                  <TextView-->
+                  <!--                      android:textSize="17sp"-->
+                  <!--                      android:textStyle="bold"-->
+                  <!--                      android:textColor="#9F0000"-->
+                  <!--                      android:text="Desc"-->
+                  <!--                      android:id="@+id/txt_desc"-->
+                  <!--                      android:layout_width="wrap_content"-->
+                  <!--                      android:layout_height="wrap_content"/>-->
+                  <TextView
+                      android:id="@+id/txt_doctor"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Doctor"
+                      android:textColor="#0664F3" />
+
+                  <androidx.appcompat.widget.LinearLayoutCompat
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content">
+
+                      <TextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="Current Quantity: "
+                          android:textColor="#F30606" />
+
+                      <TextView
+                          android:id="@+id/txt_current"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="0"
+                          android:textColor="#F30606" />
+
+
+                  </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+              </androidx.appcompat.widget.LinearLayoutCompat>
+              <androidx.appcompat.widget.LinearLayoutCompat
+                  android:orientation="vertical"
+                  android:gravity="center"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content">
+                  <TextView
+                      android:text="Available?"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"/>
+                  <RadioGroup
+                      android:orientation="horizontal"
+                      android:layout_width="wrap_content"
+                      android:id="@+id/group_available"
+                      android:layout_height="wrap_content">
+                      <RadioButton
+                          android:id="@+id/btn_yes"
+                          android:text="Yes"
+                          android:textStyle="bold"
+                          android:textColor="#1FA111"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"/>
+                      <RadioButton
+                          android:id="@+id/btn_no"
+                          android:text="No"
+                          android:textStyle="bold"
+                          android:textColor="#D51212"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"/>
+                  </RadioGroup>
+              </androidx.appcompat.widget.LinearLayoutCompat>
+
+<!--              <androidx.appcompat.widget.AppCompatCheckBox-->
+<!--                  android:id="@+id/check_box"-->
+<!--                  android:layout_width="wrap_content"-->
+<!--                  android:layout_height="wrap_content" />-->
+
+              <!--              <androidx.appcompat.widget.LinearLayoutCompat-->
+              <!--                  android:layout_width="wrap_content"-->
+              <!--                  android:layout_height="wrap_content">-->
+
+              <!--                  <ImageView-->
+              <!--                      android:id="@+id/btn_approve"-->
+              <!--                      android:tooltipText="Approve"-->
+              <!--                      android:layout_width="30dp"-->
+              <!--                      android:layout_height="30dp"-->
+              <!--                      android:layout_weight="1"-->
+              <!--                      android:src="@drawable/ic_baseline_check_circle_24" />-->
+
+              <!--                  <ImageView-->
+              <!--                      android:id="@+id/btn_reject"-->
+              <!--                      android:tooltipText="Reject"-->
+              <!--                      android:layout_width="30dp"-->
+              <!--                      android:layout_height="30dp"-->
+              <!--                      android:layout_weight="1"-->
+              <!--                      android:src="@drawable/ic_baseline_remove_circle_24" />-->
+
+              <!--                  <ImageView-->
+              <!--                      android:id="@+id/btn_review"-->
+              <!--                      android:tooltipText="Review"-->
+              <!--                      android:layout_width="30dp"-->
+              <!--                      android:layout_height="30dp"-->
+              <!--                      android:layout_weight="1"-->
+              <!--                      android:src="@drawable/ic_baseline_info_24" />-->
+              <!--              </androidx.appcompat.widget.LinearLayoutCompat>-->
+
+
+          </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+      </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+  </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
